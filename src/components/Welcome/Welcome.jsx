@@ -1,6 +1,5 @@
 import React from "react";
 import styles from "./Welcome.module.scss";
-import { Link } from "@reach/router";
 
 const Welcome = (props) => {
   const {
@@ -10,11 +9,6 @@ const Welcome = (props) => {
 
   return (<div className={styles.welcome}>
     <h1>{welcomeStr}</h1>
-    <Link to="gorilla">
-      <section >
-        gorilla
-        </section>
-    </Link>
     <h3>{scrollStr}</h3>
     <div className={styles.image}>
 

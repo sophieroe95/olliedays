@@ -21,7 +21,6 @@ const Profile = (props) => {
         <p>Display Name: {userDisplayName}</p>
         <p>Email: {userEmail}</p>
         <p>Phone Number: {phoneNumber}</p>
-        <p>Photo URL: <img src={photoURL} alt="img"/></p>
         <p>User ID: {uid}</p>
         </div>
         )};

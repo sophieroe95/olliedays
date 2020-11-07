@@ -27,23 +27,6 @@ const App = () => {
       });
   };
 
-  const signInFacebook = () => {
-    firebase
-      .auth()
-      .signInWithRedirect(facebookProvider);
-  };
-
-  const signOutFacebook = () => {
-    firebase
-      .auth()
-      .signOut()
-      .then(() => {
-        setUser(null);
-      })
-      .catch((error) => {
-        console.log(error);
-      });
-  };
   const getUser = () => {
     firebase.auth().onAuthStateChanged((user) => {
       if(user) {
@@ -68,9 +51,7 @@ const App = () => {
       <Navigation words={words}
         user={user}
         signIn={signIn}
-        signOut={signOut}
-        signInFacebook={signInFacebook}
-        signOutFacebook={signOutFacebook}/>
+        signOut={signOut}/>
     </section>
     <p className={styles.user}>Hello {userNameCheck}</p>
     <section> 
