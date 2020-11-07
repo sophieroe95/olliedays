@@ -1,0 +1,17 @@
+.welcome{
+    display: flex;
+    flex-direction: column ;
+    align-items: center;
+    padding: 20px;
+    border: 2px solid black;
+
+    .image{
+        border: 2px solid black;
+        height: 200px;
+        width: 200px;
+        background-image: url(../../assets/beach.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+}
